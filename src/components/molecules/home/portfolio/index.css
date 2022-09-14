@@ -1,0 +1,114 @@
+
+.ctn-portfolio{
+    width:80%;
+    margin:40px auto;
+}
+.is-portfolio, .is-excp{
+    font-size:15px;
+    color:#C4C4C4;
+    display:block;
+    margin:auto;
+    text-align: center;
+}
+.ttl-portfolio, .is-ttl{
+    width:23rem;
+    margin:0 auto 50px auto;
+    text-align: center;
+}
+.lst-portfolio{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.itm-portfolio{
+    border: 1px solid #C4C4C4;
+    width:20rem;
+    border-radius:10px;
+}
+.itm-portfolio:hover{
+    border: 1px solid #FFCE07;
+    transition: 1s ease-in-out;
+}
+.wrp-txt-portfolio{
+    padding:20px 15px;
+}
+.wrp-itm-portfolio img{
+    width:20rem;
+}
+.excp-portfolio{
+    color:#C4C4C4;
+    font-size:12px;
+}
+.ttl-itm-portfolio{
+    color:#FFCE07;
+    font-size:20px;
+    font-weight: bold;
+    margin:10px  0 7px 0;
+    cursor:pointer;
+}
+.desk-imt{
+    font-size:18px;
+}
+.btn-portfolio {
+    padding: 20px 50px;
+    background-color: #FFCE07;
+    margin:40px auto!important;
+    border-radius: 30px;
+    width: max-content;
+    display: block;
+    font-weight: bold;
+}
+
+
+
+/* Tablet */
+@media screen and (max-width: 1000px) and (min-width: 600px){
+    .ctn-portfolio {
+        width: 95%;
+    }
+    .wrp-itm-portfolio img {
+        width: 100%;
+        display: block;
+    }
+
+    .itm-portfolio {
+        border: 1px solid #C4C4C4;
+        width: 13rem;
+        border-radius: 10px;
+    }
+    .ttl-itm-portfolio {
+        font-size: 15px;
+    }
+    p.desk-itm {
+        font-size: 13px;
+    }
+    .lst-portfolio {
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+}
+/* Mobile */
+@media (max-width: 576px) { 
+    .ctn-portfolio {
+        width: 95%;
+    }
+    .wrp-itm-portfolio img {
+        width: 100%;
+        display: block;
+    }
+
+    .itm-portfolio {
+        border: 1px solid #C4C4C4;
+        width: 13rem;
+        border-radius: 10px;
+    }
+    .ttl-itm-portfolio {
+        font-size: 15px;
+    }
+    p.desk-itm {
+        font-size: 13px;
+    }
+    .lst-portfolio {
+        gap: 30px;
+    }
+}

@@ -1,0 +1,142 @@
+.ctn-hdh{
+    width:100%;
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.1);
+    padding:10px 0;
+    position:fixed;
+    z-index:10;
+    background-color:white;
+}
+.chd-hdh{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#272727;
+    width: 80%;
+    margin:auto;
+}
+
+/* Navbar */
+.nav{
+    display:flex;
+    justify-content: space-between;
+}
+.my-cntc{
+    padding: 13px 50px!important;
+    border-radius: 30px!important;
+    background-color: #FFCE07;
+}
+.hdh-nav-itms{
+    padding:10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.hdh-nav-itms:hover{
+    background-color: #FFCE07;
+    transition: 1s ease-in-out;
+}
+/* Logo */
+.hdh-logo img{
+    width:70px;
+    height:50px;
+}
+.menu-m{
+    display:none;
+}
+.nav-m{
+    display:none
+}
+@media screen and (max-width: 1000px) and (min-width: 600px){
+    .chd-hdh{
+        display:block
+    }
+    .hdh-nav{
+        display:none;
+    }
+    .hdh-logo{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .menu-m{
+        cursor:pointer;
+        display:block;
+        font-size:20px;
+        font-weight: bold;;
+    }
+
+    /* Navigasi */
+    .nav-m{
+        display:block;
+        background-color: white;
+        position:absolute;
+        z-index:10;
+        right:0;
+        height:100vh;
+        width:0;
+        transition: width 1s;
+    }
+    .nav-m-ac{
+        width:70%;
+        transition: width 1s;
+    }
+
+    .nav{
+        flex-direction: column;
+        gap:50px;
+        width: 60%;
+        margin: auto;
+        padding: 40px 0;
+    }
+    .my-cntc {
+        width: max-content;
+        display: block;
+    }
+}
+/* Mobile */
+@media (max-width: 600px) { 
+    .chd-hdh{
+        display:block
+    }
+    .hdh-nav{
+        display:none;
+    }
+    .hdh-logo{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .menu-m{
+        cursor:pointer;
+        display:block;
+        font-size:20px;
+        font-weight: bold;;
+    }
+
+    /* Navigasi */
+    .nav-m{
+        display:block;
+        background-color: white;
+        position:absolute;
+        z-index:10;
+        right:0;
+        height:100vh;
+        width:0;
+        transition: width 1s;
+    }
+    .nav-m-ac{
+        width:70%;
+        transition: width 1s;
+    }
+
+    .nav{
+        flex-direction: column;
+        gap:50px;
+        width: 60%;
+        margin: auto;
+        padding: 40px 0;
+    }
+    .my-cntc {
+        width: max-content;
+        display: block;
+    }
+}

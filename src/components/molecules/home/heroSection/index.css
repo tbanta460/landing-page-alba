@@ -1,0 +1,166 @@
+.ctn-hs{
+    width:80%;
+    margin:auto;
+    padding:10rem 0;
+}
+.chd-hs{
+    position:relative;
+    width:100%;
+
+}
+.chd-hs{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btn-hs{
+    height:max-content;
+    width:max-content;
+    padding:10px 30px;
+    background-color:#FFCE07;
+    font-weight:bold;
+    border-radius:30px !important;
+    margin:20px 0;
+}
+/* Text */
+.hs-txt{
+    display: flex;
+    flex-direction: column;
+    align-self:end;
+    margin-bottom:60px;
+}
+.pst-rltv{
+    position:absolute;
+    z-index:2;
+    top:10rem;
+}
+.hs-txt h2, .hs-txt h3{
+    font-size:50px;
+}
+span.line {
+    display: flex;
+    align-items: center;
+}
+.line::before {
+    content: "";
+    width: 5rem;
+    height: 5px;
+    background-color: #FFCE07;
+    display: block;
+    margin-right: 10px;
+}
+/* Image */
+.hs-gmb{
+    width:max-content;
+    position:relative
+}
+.dots, .dotss{
+    position:absolute;
+    z-index:0;
+}
+img.dots {
+    left: -3.3rem;
+    top: 5rem;
+}
+img.dotss {
+    bottom: -1.3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20rem;
+}
+img.hs-gmb-mn {
+    width: 48rem;
+    position:relative;
+    z-index:1;
+}
+
+
+/* Button WhatsApp */
+.whatsapp{
+    position: fixed;
+    bottom: 5rem;
+    right:3rem;
+}
+.wa{
+    cursor:pointer;
+    width:60px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1000px) and (min-width: 600px){
+    .ctn-hs{
+        width:100%;
+    }
+    .chd-hs {
+        display:block;
+        width: 100%;
+    }
+    /* Text */
+    .hs-txt {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgb(0,0,0,0.5);
+        left:2rem;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .hs-txt > *, .pst-rltv > *{
+        color:white;
+    }
+    .hs-txt .txt-bld, .hs-txt .txt-ydt{
+        font-size: 40px;
+    }
+    .pst-rltv{
+        position: static;
+    }
+
+    /* Gambar */
+    img.hs-gmb-mn{
+        width:100%;
+    }
+    .hs-gmb{
+        position:static;
+        width:100%
+    }
+}
+/* Mobile */
+@media (max-width: 576px) { 
+    .ctn-hs{
+        width:100%;
+    }
+    .chd-hs {
+        display:block;
+        width: 100%;
+    }
+    /* Text */
+    .hs-txt {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgb(0,0,0,0.5);
+        left:2rem;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .hs-txt > *, .pst-rltv > *{
+        color:white;
+    }
+    .hs-txt .txt-bld, .hs-txt .txt-ydt{
+        font-size: 25px;
+    }
+    .pst-rltv{
+        position: static;
+    }
+
+    /* Gambar */
+    img.hs-gmb-mn{
+        width:100%;
+    }
+    .hs-gmb{
+        position:static;
+        width:100%
+    }
+}
